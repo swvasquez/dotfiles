@@ -1,0 +1,2 @@
+# Change the prelude text.
+:set prompt "\ESC[3;32mType\ESC[0m \ESC[32mhere>\ESC[0m "

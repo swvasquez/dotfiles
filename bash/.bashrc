@@ -116,7 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-########################### user edits ###########################
+################################################################################
+################################## USER EDITS ##################################
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -130,7 +131,10 @@ else
         export PATH="/home/scott/anaconda3/bin:$PATH"
     fi
 fi
+
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Needed in order to create custom keybinds using dconf/gsettings.
+export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/e
 
