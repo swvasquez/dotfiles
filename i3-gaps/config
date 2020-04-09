@@ -206,8 +206,15 @@ exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/fuji.jpg
 # Moving workspaces between screens 
 bindsym $mod+p move workspace to output right
 
-# Create workstation on another display.
-bindsym $mod+Shift+d exec xrandr --output DP-3 --mode 1920x1080 --right-of eDP-1 --rate 60
+# Create workspace on another display. Designate relative position with arrow
+# keys.
+bindsym $mod+Mod4+Up exec xrandr --output DP-3 --mode 1920x1080 --above eDP-1 --rate 60
+bindsym $mod+Mod4+Down exec xrandr --output DP-3 --mode 1920x1080 --below eDP-1 --rate 60
+bindsym $mod+Mod4+Left exec xrandr --output DP-3 --mode 1920x1080 --left-of eDP-1 --rate 60
+bindsym $mod+Mod4+Right exec xrandr --output DP-3 --mode 1920x1080 --right-of eDP-1 --rate 60
+
+# Remove display.
+bindsym $mod+Mod4+BackSpace exec xrandr --output DP-3 --off
  
 # Cycle through workspaces on the current display.
 bindsym $mod+Ctrl+Up workspace next_on_output
