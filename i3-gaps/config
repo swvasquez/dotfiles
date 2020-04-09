@@ -207,7 +207,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/fuji.jpg
 bindsym $mod+p move workspace to output right
 
 # Create workstation on another display.
-bindsym $mod+Shift+d xrandr --output DP-3 --mode 1920x1080 --right-of eDP-1 --rate 60
+bindsym $mod+Shift+d exec xrandr --output DP-3 --mode 1920x1080 --right-of eDP-1 --rate 60
  
 # Cycle through workspaces on the current display.
 bindsym $mod+Ctrl+Up workspace next_on_output
