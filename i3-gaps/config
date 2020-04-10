@@ -191,6 +191,9 @@ bar {
 # After modifying this conf file, run from the terminal "i3-msg reload". If a 
 # change doesn't take effect, try running "i3-msg restart" as well.
 
+# Start up polybar.
+exec_always --no-startup-id pbar 
+
 # Define gap size between windows.
 gaps inner 15
 
@@ -222,8 +225,5 @@ bindsym $mod+Mod4+BackSpace exec xrandr --output DP-3 --off
 bindsym $mod+Ctrl+Up workspace next_on_output
 bindsym $mod+Ctrl+Down workspace prev_on_output
 
-bar {
-        mode invisible
-        hidden_state hide
-}
+
 
