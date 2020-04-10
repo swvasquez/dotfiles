@@ -180,7 +180,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        mode hide
         status_command i3status
+        modifier Mod1
 }
 
 ################################################################################
@@ -219,3 +221,9 @@ bindsym $mod+Mod4+BackSpace exec xrandr --output DP-3 --off
 # Cycle through workspaces on the current display.
 bindsym $mod+Ctrl+Up workspace next_on_output
 bindsym $mod+Ctrl+Down workspace prev_on_output
+
+bar {
+        mode invisible
+        hidden_state hide
+}
+
