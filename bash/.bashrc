@@ -138,3 +138,7 @@ unset __conda_setup
 # Needed in order to create custom keybinds using dconf/gsettings.
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/e
 
+# Replace interrupt key bind in terminal to minimize chances of terminating a 
+# process when copying text. 
+stty intr ^E
+
