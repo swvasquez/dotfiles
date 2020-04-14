@@ -142,3 +142,6 @@ export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/e
 # process when copying text. 
 stty intr ^E
 
+# List hidden files first when using ls command.
+export LC_COLLATE="C"
+
