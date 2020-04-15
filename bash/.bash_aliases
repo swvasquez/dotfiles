@@ -23,3 +23,6 @@ alias marktext="./marktext-x86_64.AppImage"
 # Open JupyterLab notebook
 alias jupyter="nohup jupyter-lab --notebook-dir=${HOME} >/dev/null 2>&1 &"
 
+# Open neovim
+alias neovim="nvm"
+
