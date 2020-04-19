@@ -21,8 +21,11 @@ alias pdfo="okular"
 alias marktext="./marktext-x86_64.AppImage"
 
 # Open JupyterLab notebook
-alias jup="jupyter-lab >/dev/null 2>&1 &"
+alias jup="nohup jupyter-lab --notebook-dir=$HOME >/dev/null 2>&1 &"
 
 # Open neovim
 alias neovim="nvm"
 
+# Set default Python to Python3
+alias python="python3"
+alias pip="pip3"
