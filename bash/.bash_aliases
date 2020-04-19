@@ -24,8 +24,16 @@ alias marktext="./marktext-x86_64.AppImage"
 alias jup="nohup jupyter-lab --notebook-dir=$HOME >/dev/null 2>&1 &"
 
 # Open neovim
-alias neovim="nvm"
+alias vim="nvim"
 
 # Set default Python to Python3
 alias python="python3"
 alias pip="pip3"
+
+# For common directories:
+alias home="cd ~"
+alias config="cd ~/.config"
+alias documents="cd ~/Documents"
+alias dotfiles="cd ~/dotfiles"
+alias projects="cd ~/Projects"
+alias scratch="cd ~/scratch"
